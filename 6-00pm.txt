@@ -1,0 +1,311 @@
+  1  exit
+    2  su - root 
+    3  pwd
+    4  su - root 
+    5  su root 
+    6  su - root 
+    7  su root 
+    8  cal 
+    9  cal -y 
+   10  cal -y 29 03 2021 
+   11  cal --help 
+   12  cal 
+   13  cal -1 
+   14  cal -3 
+   15  cal -h
+   16  cal -s 
+   17  cal -m 
+   18  cal -y 2020 
+   19  cal -h 
+   20  cal -j 
+   21  cal -V 
+   22  echo hello 
+   23  echo $HOME 
+   24  pwd
+   25  cd Desktop/
+   26  pwd
+   27  echo $HOME 
+   28  echo $0 
+   29  echo $BASH_VERSION 
+   30  NAME=imran
+   31  echo $NAME 
+   32  uname -a 
+   33  uname -r 
+   34  cat /etc/redhat-release 
+   35  date 
+   36  echo $SHELL
+   37  date +%T 
+   38  date +%B 
+   39  date +%Y 
+   40  date +%D
+   41  date --help 
+   42  date +%j 
+   43  date -s "2021-08-22 11:22:44" 
+   44  su - root 
+   45  history 
+
+
+root-user  1  exit
+    2  pwd
+    3  exit
+    4  pwd
+    5  exit
+    6  pwd
+    7  exit
+    8  pwd
+    9  exit
+   10  date -s "2021-08-22 11:22:44" 
+   11  timedatectl 
+   12  timedatectl set-time "2021-12-01 19:08:22" 
+   13  timedatectl 
+   14  timedatectl list-timezones 
+   15  timedatectl set-timezone "Africa/Johannesburg" 
+   16  timedatectl 
+   17  timedatectl set-ntp true 
+   18  timedatectl status 
+   19  id student 
+   20  id root 
+   21  id u
+   22  id u1 
+   23  history 
+From imran shaik to Everyone 06:42 PM
+6  su - 
+    7  cd Desktop/
+    8  ls -l 
+    9  cd /dev 
+   10  ls -l 
+   11  ls -l | grep ^b 
+   12  cd / 
+   13  ls -l
+   14  ls -l 
+   15  ls -l | grep ^l 
+   16  cd
+   17  cd Desktop/
+   18  file File3 
+   19  file f4 
+   20  file d2 
+   21  file /dev/sda
+   22  file /bin 
+   23  file /sbin 
+   24  pwd
+   25  cd
+   26  pwd
+   27  cat > soft 
+   28  ls -l 
+   29  cd Desktop/
+   30  pwd
+   31  ln -s /home/student/soft s1 
+   32  ls -l 
+   33  cat >> s1 
+   34  cat s1 
+   35  cat /home/student/soft 
+   36  du -h s1 
+   37  du -h /home/student/soft 
+   38  ls -i s1 
+   39  ls -i /home/student/soft 
+   40  rm -rf /home/student/soft 
+   41  cat s1 
+   42  cd
+   43  pwd
+   44  cat > hard 
+   45  ls -l 
+   46  cd Desktop/
+   47  ls -l 
+   48  ln /home/student/hard h1 
+   49  cat h1 
+   50  ls -l 
+   51  cat >> h1 
+   52  cat h1 
+   53  cat /home/student/hard 
+   54  du -h h1 
+   55  du -h /home/student/hard 
+   56  ls -i h1 
+   57  ls -i /home/student/hard 
+   58  rm -rf /home/student/hard 
+   59  cat h1
+From KISHAN to Everyone 06:44 PM
+clear sir
+From Rahul Sondhiya to Everyone 06:44 PM
+1 exit 
+2 tty 
+3 tty 
+4 tty 
+5 cd Desktop/ 
+6 ls -l 
+7 pwd 
+8 cd NIT
+ 9 ls -l
+ 10 cd Linux 
+11 ls -l 
+12 pwd 
+13 ls -l 
+14 cd Rhcsa 
+15 pwd 
+16 ls -l
+ 17 cd .. 
+18 pwd 
+19 cd ../.. 
+20 pwd 
+21 cd 
+22 cd ~ 
+23 cd ~ 
+24 cd 
+25 pwd
+ 26 cd Desktop/NIT/Linux/Rhcsa 
+27 pwd 
+28 cd 
+29 pwdd 
+30 pwd 
+31 cd Desktop/ 
+32 pwd 
+33 ls -l 
+34 cat File1 
+35 cat File2 
+36 cp File1 File2 
+37 cat File2 
+38 cp File1 New1
+ 39 ls -l 
+40 cat New1 
+41 cp File1 >> File2 
+42 ls -l 
+43 cp File1 dir1 
+44 cd dir1 
+45 ls -l 
+46 cd .. 
+47 ls -l dir1 
+48 cp dir1 dir2 
+49 cp -rvf dir1 dir2 
+50 ls -l dir2 
+51 cp --help 
+52 ls -l 
+53 cat File1 
+54 cat File2 
+55 cat > File2
+ 56 cat File2 
+57 mv File1 File2 
+58 ls -l 
+59 cat File2 
+60 mv File2 New2 
+61 ls -l 
+62 cat New2 
+63 ls -l 
+64 mv New2 dir2
+65 ls -l dir2 
+66 ls - l 
+67 ls -l 
+68 ls -l 
+69 mv dir2 dir4 
+70 ls -l 
+71 ls -l dir4 
+72 ls -l 
+73 mv dir3 demo 
+74 ls -l 
+75 mv f1 f2 dir1 
+76 ls -l dir1 
+77 ls -l 
+78 rm f3 
+79 ls -l 
+80 rm k* 
+81 ls -l 
+82 rmdir dir1 
+83 rmdir demo 
+84 ls -l 
+85 r
+From imtiyaz khan to Everyone 06:57 PM
+no
+s
+vat also sir
+a*
+From Indrajeet Niture to Everyone 06:57 PM
+*at
+From imtiyaz khan to Everyone 06:57 PM
+ok
+From Indrajeet Niture to Everyone 06:57 PM
+ls -l *at
+From mohammad abdul azeem to Everyone 06:58 PM
+yes sir
+From imtiyaz khan to Everyone 06:59 PM
+ok
+yes
+From imran shaik to Everyone 07:03 PM
+61  ls -l 
+   62  ls 
+   63  ls -l 
+   64  ll
+   65  ls -al 
+   66  touch .l1 
+   67  ls -l 
+   68  touch .k1 
+   69  ls -l 
+   70  ls -al 
+   71  ls -ld NIT 
+   72  ls -l File3 
+   73  ls -l NIT 
+   74  mkdir .j1 
+   75  ls -l 
+   76  ls -al 
+   77  ls -l 
+   78  touch f{1..4} 
+   79  touch k{1..4} 
+   80  mkdir dir{1..4} 
+   81  ls -l 
+   82  ls -l f* 
+   83  ls -l k* 
+   84  ls -l 
+   85  ls -l [fk]* 
+   86  ls -l [!fk]* 
+   87  ls -ld dir* 
+   88  touch rat mat bat fat hat cat 
+   89  ls -l 
+   90  ls -l a* 
+   91  ls -l ?at 
+   92  ls -l ??
+   93  ls -l ??? 
+   94  ls -l ???? 
+   95  ls -ld ???? 
+   96  ls -l [a-d]* 
+   97  touch abcd 
+   98  ls -l [a-d]* 
+   99  ls -ltr 
+  100  history
+61  ls -l 
+   62  ls 
+   63  ls -l 
+   64  ll
+   65  ls -al 
+   66  touch .l1 
+   67  ls -l 
+   68  touch .k1 
+   69  ls -l 
+   70  ls -al 
+   71  ls -ld NIT 
+   72  ls -l File3 
+   73  ls -l NIT 
+   74  mkdir .j1 
+   75  ls -l 
+   76  ls -al 
+   77  ls -l 
+   78  touch f{1..4} 
+   79  touch k{1..4} 
+   80  mkdir dir{1..4} 
+   81  ls -l 
+   82  ls -l f* 
+   83  ls -l k* 
+   84  ls -l 
+   85  ls -l [fk]* 
+   86  ls -l [!fk]* 
+   87  ls -ld dir* 
+   88  touch rat mat bat fat hat cat 
+   89  ls -l 
+   90  ls -l a* 
+   91  ls -l ?at 
+   92  ls -l ??
+   93  ls -l ??? 
+   94  ls -l ???? 
+   95  ls -ld ???? 
+   96  ls -l [a-d]* 
+   97  touch abcd 
+   98  ls -l [a-d]* 
+   99  ls -ltr 
+  100  history
+

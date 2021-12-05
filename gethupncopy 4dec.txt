@@ -1,0 +1,7 @@
+echo "# my-test-repo" >> README.md
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/swapna4devops/my-test-repo.git
+git push -u origin main
+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 new token
