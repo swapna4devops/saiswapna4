@@ -1,0 +1,10 @@
+ubuntu in playbook
+---
+- hosts :all
+become : yes
+tasks : n number off
+- name : i want to install webser on ubuntu 16. node
+apt:
+name :apache2
+state : present
+when : ansible_os_family=="Debian"

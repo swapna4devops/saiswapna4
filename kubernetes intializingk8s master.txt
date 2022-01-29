@@ -1,0 +1,299 @@
+$ ssh -i "myansibleoffline999.pem" ubuntu@ec2-13-58-217-90.us-east-2.compute.amazonaws.com
+Welcome to Ubuntu 16.04.7 LTS (GNU/Linux 4.4.0-1128-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+UA Infra: Extended Security Maintenance (ESM) is not enabled.
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+59 additional security updates can be applied with UA Infra: ESM
+Learn more about enabling UA Infra: ESM service for Ubuntu 16.04 at
+https://ubuntu.com/16-04
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+New release '18.04.6 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Mon Jan 10 07:45:35 2022 from 146.196.36.169
+ubuntu@ip-172-31-28-128:~$ sudo -i
+root@ip-172-31-28-128:~# apt-get update
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial InRelease
+Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease
+Hit:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease
+Hit:4 https://download.docker.com/linux/ubuntu xenial InRelease
+Hit:5 http://security.ubuntu.com/ubuntu xenial-security InRelease
+Get:6 https://esm.ubuntu.com/infra/ubuntu xenial-infra-security InRelease [7,515 B]
+Get:7 https://esm.ubuntu.com/infra/ubuntu xenial-infra-updates InRelease [7,475 B]
+Get:8 https://esm.ubuntu.com/infra/ubuntu xenial-infra-security/main amd64 Packages [267 kB]
+Fetched 282 kB in 1s (246 kB/s)
+Reading package lists... Done
+root@ip-172-31-28-128:~# https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+-bash: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/: No such file or directory
+root@ip-172-31-28-128:~# https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+-bash: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/: No such file or directory
+root@ip-172-31-28-128:~# https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+-bash: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/: No such file or directory
+root@ip-172-31-28-128:~# https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+-bash: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/: No such file or directory
+root@ip-172-31-28-128:~# sudo apt-get remove docker docker-engine docker.io containerd runc
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Package 'docker-engine' is not installed, so not removed
+Package 'docker' is not installed, so not removed
+Package 'containerd' is not installed, so not removed
+Package 'runc' is not installed, so not removed
+Package 'docker.io' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+root@ip-172-31-28-128:~# sudo apt-get update
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial InRelease
+Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease
+Hit:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu xenial-security InRelease
+Hit:5 https://download.docker.com/linux/ubuntu xenial InRelease
+Get:6 https://esm.ubuntu.com/infra/ubuntu xenial-infra-security InRelease [7,515 B]
+Get:7 https://esm.ubuntu.com/infra/ubuntu xenial-infra-updates InRelease [7,475 B]
+Fetched 15.0 kB in 0s (15.9 kB/s)
+Reading package lists... Done
+root@ip-172-31-28-128:~# sudo apt-get install \
+>     ca-certificates \
+>     curl \
+>     gnupg \
+>     lsb-release
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+ca-certificates is already the newest version (20210119~16.04.1).
+curl is already the newest version (7.47.0-1ubuntu2.19).
+gnupg is already the newest version (1.4.20-1ubuntu3.3).
+lsb-release is already the newest version (9.20160110ubuntu0.2).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+root@ip-172-31-28-128:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+File `/usr/share/keyrings/docker-archive-keyring.gpg' exists. Overwrite? (y/N) y
+root@ip-172-31-28-128:~# echo \
+>   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+>   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+root@ip-172-31-28-128:~#  sudo apt-get update
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial InRelease
+Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease
+Hit:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu xenial-security InRelease
+Hit:5 https://download.docker.com/linux/ubuntu xenial InRelease
+Get:6 https://esm.ubuntu.com/infra/ubuntu xenial-infra-security InRelease [7,515 B]
+Hit:6 https://esm.ubuntu.com/infra/ubuntu xenial-infra-security InRelease
+Get:7 https://esm.ubuntu.com/infra/ubuntu xenial-infra-updates InRelease [7,475 B]
+Hit:7 https://esm.ubuntu.com/infra/ubuntu xenial-infra-updates InRelease
+Reading package lists... Done
+root@ip-172-31-28-128:~# sudo apt-get install docker-ce docker-ce-cli containerd.io
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+containerd.io is already the newest version (1.4.6-1).
+docker-ce-cli is already the newest version (5:20.10.7~3-0~ubuntu-xenial).
+docker-ce is already the newest version (5:20.10.7~3-0~ubuntu-xenial).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+root@ip-172-31-28-128:~# docker --version
+Docker version 20.10.7, build f0df350
+root@ip-172-31-28-128:~# sudo mkdir /etc/docker
+mkdir: cannot create directory ‘/etc/docker’: File exists
+root@ip-172-31-28-128:~# cat <<EOF | sudo tee /etc/docker/daemon.json
+> {
+>   "exec-opts": ["native.cgroupdriver=systemd"],
+>   "log-driver": "json-file",
+>   "log-opts": {
+>     "max-size": "100m"
+>   },
+>   "storage-driver": "overlay2"
+> }
+> EOF
+{
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2"
+}
+root@ip-172-31-28-128:~# sudo systemctl enable docker
+Synchronizing state of docker.service with SysV init with /lib/systemd/systemd-sysv-install...
+Executing /lib/systemd/systemd-sysv-install enable docker
+sudo systemctl restart dockerroot@ip-172-31-28-128:~# sudo systemctl daemon-reload
+root@ip-172-31-28-128:~# sudo systemctl restart docker
+root@ip-172-31-28-128:~# sudo apt-get update
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial InRelease
+Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease
+Hit:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease
+Hit:4 https://download.docker.com/linux/ubuntu xenial InRelease
+Hit:5 http://security.ubuntu.com/ubuntu xenial-security InRelease
+Get:6 https://esm.ubuntu.com/infra/ubuntu xenial-infra-security InRelease [7,515 B]
+Get:7 https://esm.ubuntu.com/infra/ubuntu xenial-infra-updates InRelease [7,475 B]
+Fetched 15.0 kB in 0s (21.8 kB/s)
+Reading package lists... Done
+root@ip-172-31-28-128:~# sudo apt-get install -y apt-transport-https ca-certificates curl
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+apt-transport-https is already the newest version (1.2.35).
+ca-certificates is already the newest version (20210119~16.04.1).
+curl is already the newest version (7.47.0-1ubuntu2.19).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+root@ip-172-31-28-128:~# sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+root@ip-172-31-28-128:~# echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main
+root@ip-172-31-28-128:~# sudo apt-get update
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial InRelease
+Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease
+Hit:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu xenial-security InRelease
+Hit:5 https://download.docker.com/linux/ubuntu xenial InRelease
+Get:6 https://esm.ubuntu.com/infra/ubuntu xenial-infra-security InRelease [7,515 B]
+Get:7 https://apt.kubernetes.io kubernetes-xenial InRelease [154 B]
+Get:8 https://esm.ubuntu.com/infra/ubuntu xenial-infra-updates InRelease [7,475 B]
+Get:9 https://apt.kubernetes.io kubernetes-xenial/main amd64 Packages [52.6 kB]
+Fetched 76.9 kB in 0s (86.1 kB/s)
+Reading package lists... Done
+root@ip-172-31-28-128:~# sudo apt-get install -y kubelet kubeadm kubectl
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  conntrack cri-tools ebtables kubernetes-cni socat
+The following NEW packages will be installed:
+  conntrack cri-tools ebtables kubeadm kubectl kubelet kubernetes-cni socat
+0 upgraded, 8 newly installed, 0 to remove and 1 not upgraded.
+Need to get 73.6 MB of archives.
+After this operation, 320 MB of additional disk space will be used.
+Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 conntrack amd64 1:1.4.3-3 [27.3 kB]
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ebtables amd64 2.0.10.4-3.4ubuntu2.16.04.2 [79.9 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu xenial/universe amd64 socat amd64 1.7.3.1-1 [321 kB]
+Get:4 https://apt.kubernetes.io kubernetes-xenial/main amd64 cri-tools amd64 1.19.0-00 [11.2 MB]
+Get:5 https://apt.kubernetes.io kubernetes-xenial/main amd64 kubernetes-cni amd64 0.8.7-00 [25.0 MB]
+Get:6 https://apt.kubernetes.io kubernetes-xenial/main amd64 kubelet amd64 1.23.1-00 [19.5 MB]
+Get:7 https://apt.kubernetes.io kubernetes-xenial/main amd64 kubectl amd64 1.23.1-00 [8,928 kB]
+Get:8 https://apt.kubernetes.io kubernetes-xenial/main amd64 kubeadm amd64 1.23.1-00 [8,579 kB]
+Fetched 73.6 MB in 2s (30.5 MB/s)
+Selecting previously unselected package conntrack.
+(Reading database ... 51812 files and directories currently installed.)
+Preparing to unpack .../conntrack_1%3a1.4.3-3_amd64.deb ...
+Unpacking conntrack (1:1.4.3-3) ...
+Selecting previously unselected package cri-tools.
+Preparing to unpack .../cri-tools_1.19.0-00_amd64.deb ...
+Unpacking cri-tools (1.19.0-00) ...
+Selecting previously unselected package ebtables.
+Preparing to unpack .../ebtables_2.0.10.4-3.4ubuntu2.16.04.2_amd64.deb ...
+Unpacking ebtables (2.0.10.4-3.4ubuntu2.16.04.2) ...
+Selecting previously unselected package kubernetes-cni.
+Preparing to unpack .../kubernetes-cni_0.8.7-00_amd64.deb ...
+Unpacking kubernetes-cni (0.8.7-00) ...
+Selecting previously unselected package socat.
+Preparing to unpack .../socat_1.7.3.1-1_amd64.deb ...
+Unpacking socat (1.7.3.1-1) ...
+Selecting previously unselected package kubelet.
+Preparing to unpack .../kubelet_1.23.1-00_amd64.deb ...
+Unpacking kubelet (1.23.1-00) ...
+Selecting previously unselected package kubectl.
+Preparing to unpack .../kubectl_1.23.1-00_amd64.deb ...
+Unpacking kubectl (1.23.1-00) ...
+Selecting previously unselected package kubeadm.
+Preparing to unpack .../kubeadm_1.23.1-00_amd64.deb ...
+Unpacking kubeadm (1.23.1-00) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+Processing triggers for systemd (229-4ubuntu21.31) ...
+Setting up conntrack (1:1.4.3-3) ...
+Setting up cri-tools (1.19.0-00) ...
+Setting up ebtables (2.0.10.4-3.4ubuntu2.16.04.2) ...
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+Setting up kubernetes-cni (0.8.7-00) ...
+Setting up socat (1.7.3.1-1) ...
+Setting up kubelet (1.23.1-00) ...
+Setting up kubectl (1.23.1-00) ...
+Setting up kubeadm (1.23.1-00) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+Processing triggers for systemd (229-4ubuntu21.31) ...
+root@ip-172-31-28-128:~# sudo apt-mark hold kubelet kubeadm kubectl
+kubelet set on hold.
+kubeadm set on hold.
+kubectl set on hold.
+root@ip-172-31-28-128:~# kubeadm init
+[init] Using Kubernetes version: v1.23.1
+[preflight] Running pre-flight checks
+[preflight] Pulling images required for setting up a Kubernetes cluster
+[preflight] This might take a minute or two, depending on the speed of your internet connection
+[preflight] You can also perform this action in beforehand using 'kubeadm config images pull'
+[certs] Using certificateDir folder "/etc/kubernetes/pki"
+[certs] Generating "ca" certificate and key
+[certs] Generating "apiserver" certificate and key
+[certs] apiserver serving cert is signed for DNS names [ip-172-31-28-128 kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 172.31.28.128]
+[certs] Generating "apiserver-kubelet-client" certificate and key
+[certs] Generating "front-proxy-ca" certificate and key
+[certs] Generating "front-proxy-client" certificate and key
+[certs] Generating "etcd/ca" certificate and key
+[certs] Generating "etcd/server" certificate and key
+[certs] etcd/server serving cert is signed for DNS names [ip-172-31-28-128 localhost] and IPs [172.31.28.128 127.0.0.1 ::1]
+[certs] Generating "etcd/peer" certificate and key
+[certs] etcd/peer serving cert is signed for DNS names [ip-172-31-28-128 localhost] and IPs [172.31.28.128 127.0.0.1 ::1]
+[certs] Generating "etcd/healthcheck-client" certificate and key
+[certs] Generating "apiserver-etcd-client" certificate and key
+[certs] Generating "sa" key and public key
+[kubeconfig] Using kubeconfig folder "/etc/kubernetes"
+[kubeconfig] Writing "admin.conf" kubeconfig file
+[kubeconfig] Writing "kubelet.conf" kubeconfig file
+[kubeconfig] Writing "controller-manager.conf" kubeconfig file
+[kubeconfig] Writing "scheduler.conf" kubeconfig file
+[kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+[kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+[kubelet-start] Starting the kubelet
+[control-plane] Using manifest folder "/etc/kubernetes/manifests"
+[control-plane] Creating static Pod manifest for "kube-apiserver"
+[control-plane] Creating static Pod manifest for "kube-controller-manager"
+[control-plane] Creating static Pod manifest for "kube-scheduler"
+[etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
+[wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
+[apiclient] All control plane components are healthy after 8.002241 seconds
+[upload-config] Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
+[kubelet] Creating a ConfigMap "kubelet-config-1.23" in namespace kube-system with the configuration for the kubelets in the cluster
+NOTE: The "kubelet-config-1.23" naming of the kubelet ConfigMap is deprecated. Once the UnversionedKubeletConfigMap feature gate graduates to Beta the default name will become just "kubelet-config". Kubeadm upgrade will handle this transition transparently.
+[upload-certs] Skipping phase. Please see --upload-certs
+[mark-control-plane] Marking the node ip-172-31-28-128 as control-plane by adding the labels: [node-role.kubernetes.io/master(deprecated) node-role.kubernetes.io/control-plane node.kubernetes.io/exclude-from-external-load-balancers]
+[mark-control-plane] Marking the node ip-172-31-28-128 as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]
+[bootstrap-token] Using token: fj652u.v22zbhpgfj8s7cgx
+[bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
+[bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to get nodes
+[bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
+[bootstrap-token] configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token
+[bootstrap-token] configured RBAC rules to allow certificate rotation for all node client certificates in the cluster
+[bootstrap-token] Creating the "cluster-info" ConfigMap in the "kube-public" namespace
+[kubelet-finalize] Updating "/etc/kubernetes/kubelet.conf" to point to a rotatable kubelet client certificate and key
+[addons] Applied essential addon: CoreDNS
+[addons] Applied essential addon: kube-proxy
+
+Your Kubernetes control-plane has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+ ON MAster:
+-------------------------------------
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join 172.31.28.128:6443 --token fj652u.v22zbhpgfj8s7cgx \
+        --discovery-token-ca-cert-hash sha256:6e066abff213e9541fd046cfd54ba23ec38d855c98f5575b25bf63d4b42b80f6
+root@ip-172-31-28-128:~#

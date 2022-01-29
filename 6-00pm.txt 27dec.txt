@@ -1,0 +1,1006 @@
+27/12/21  1  exit
+    2  su - root 
+    3  pwd
+    4  su - root 
+    5  su root 
+    6  su - root 
+    7  su root 
+    8  cal 
+    9  cal -y 
+   10  cal -y 29 03 2021 
+   11  cal --help 
+   12  cal 
+   13  cal -1 
+   14  cal -3 
+   15  cal -h
+   16  cal -s 
+   17  cal -m 
+   18  cal -y 2020 
+   19  cal -h 
+   20  cal -j 
+   21  cal -V 
+   22  echo hello 
+   23  echo $HOME 
+   24  pwd
+   25  cd Desktop/
+   26  pwd
+   27  echo $HOME 
+   28  echo $0 
+   29  echo $BASH_VERSION 
+   30  NAME=imran
+   31  echo $NAME 
+   32  uname -a 
+   33  uname -r 
+   34  cat /etc/redhat-release 
+   35  date 
+   36  echo $SHELL
+   37  date +%T 
+   38  date +%B 
+   39  date +%Y 
+   40  date +%D
+   41  date --help 
+   42  date +%j 
+   43  date -s "2021-08-22 11:22:44" 
+   44  su - root 
+   45  history 
+
+
+root-user  1  exit
+    2  pwd
+    3  exit
+    4  pwd
+    5  exit
+    6  pwd
+    7  exit
+    8  pwd
+    9  exit
+   10  date -s "2021-08-22 11:22:44" 
+   11  timedatectl 
+   12  timedatectl set-time "2021-12-01 19:08:22" 
+   13  timedatectl 
+   14  timedatectl list-timezones 
+   15  timedatectl set-timezone "Africa/Johannesburg" 
+   16  timedatectl 
+   17  timedatectl set-ntp true 
+   18  timedatectl status 
+   19  id student 
+   20  id root 
+   21  id u
+   22  id u1 
+   23  history 
+
+
+ 50  man cat 
+   51  pwd
+   52  cat > File1 
+   53  cat < File1 
+   54  cat File1 
+   55  cat > File2 
+   56  ls -l 
+   57  cat File1 
+   58  cat >> File1 
+   59  cat File1 
+   60  cat File2 
+   61  cat File1 File2 > File3 
+   62  ls -l 
+   63  cat File3 
+   64  touch f1 f2 f3 f4 
+   65  ls -l 
+   66  touch k{1..4} 
+   67  ls -l 
+   68  touch -d "2021-06-11 11:22:44" File1 
+   69  ls -l 
+   70  touch -d "2021-06-11 11:22:44" File{1..3} 
+   71  ls -l 
+   72  mkdir dir1 dir2 dir3 dir4 
+   73  ls -l 
+   74  mkdir d{1..4} 
+   75  ls -l 
+   76  mkdir -p L1/L2/L3/L4
+   77  mkdir -p L1/L2/L3/L4 
+   78  ls -l 
+   79  ls -R L1
+   80  tree L1 
+   81  su - 
+   82  tree L1 
+   83  mkdir -p NIT/{Linux/{Rhcsa,Rhce},Windows/{Mcsa,Mcse},Oracle/{Sql,Plsql}} 
+   84  ls -l 
+   85  ls -R NIT 
+   86  tree NIT 
+   87  history 
+
+  65  ls -l dir2 
+   66  ls - l 
+   67  ls -l
+   68  ls -l 
+   69  mv dir2 dir4 
+   70  ls -l 
+   71  ls -l dir4 
+   72  ls -l 
+   73  mv dir3 demo 
+   74  ls -l 
+   75  mv f1 f2 dir1 
+   76  ls -l dir1 
+   77  ls -l 
+   78  rm f3 
+   79  ls -l 
+   80  rm k* 
+   81  ls -l 
+   82  rmdir dir1 
+   83  rmdir demo 
+   84  ls -l 
+   85  rmdir d1 
+   86  ls -l 
+   87  rmdir d3 
+   88  ls -l 
+   89  rm -rvf dir4 
+   90  rm -rvf dir1 
+   91  ls -l 
+   92  ls -R NIT 
+   93  tree NIT 
+   94  rm -rvf NIT/Oracle
+   95  tree NIT 
+   96  history 
+
+
+  6  su - 
+    7  cd Desktop/
+    8  ls -l 
+    9  cd /dev 
+   10  ls -l 
+   11  ls -l | grep ^b 
+   12  cd / 
+   13  ls -l
+   14  ls -l 
+   15  ls -l | grep ^l 
+   16  cd
+   17  cd Desktop/
+   18  file File3 
+   19  file f4 
+   20  file d2 
+   21  file /dev/sda
+   22  file /bin 
+   23  file /sbin 
+   24  pwd
+   25  cd
+   26  pwd
+   27  cat > soft 
+   28  ls -l 
+   29  cd Desktop/
+   30  pwd
+   31  ln -s /home/student/soft s1 
+   32  ls -l 
+   33  cat >> s1 
+   34  cat s1 
+   35  cat /home/student/soft 
+   36  du -h s1 
+   37  du -h /home/student/soft 
+   38  ls -i s1 
+   39  ls -i /home/student/soft 
+   40  rm -rf /home/student/soft 
+   41  cat s1 
+   42  cd
+   43  pwd
+   44  cat > hard 
+   45  ls -l 
+   46  cd Desktop/
+   47  ls -l 
+   48  ln /home/student/hard h1 
+   49  cat h1 
+   50  ls -l 
+   51  cat >> h1 
+   52  cat h1 
+   53  cat /home/student/hard 
+   54  du -h h1 
+   55  du -h /home/student/hard 
+   56  ls -i h1 
+   57  ls -i /home/student/hard 
+   58  rm -rf /home/student/hard 
+   59  cat h1 
+   60  history 
+
+
+ 61  ls -l 
+   62  ls 
+   63  ls -l 
+   64  ll
+   65  ls -al 
+   66  touch .l1 
+   67  ls -l 
+   68  touch .k1 
+   69  ls -l 
+   70  ls -al 
+   71  ls -ld NIT 
+   72  ls -l File3 
+   73  ls -l NIT 
+   74  mkdir .j1 
+   75  ls -l 
+   76  ls -al 
+   77  ls -l 
+   78  touch f{1..4} 
+   79  touch k{1..4} 
+   80  mkdir dir{1..4} 
+   81  ls -l 
+   82  ls -l f* 
+   83  ls -l k* 
+   84  ls -l 
+   85  ls -l [fk]* 
+   86  ls -l [!fk]* 
+   87  ls -ld dir* 
+   88  touch rat mat bat fat hat cat 
+   89  ls -l 
+   90  ls -l a* 
+   91  ls -l ?at 
+   92  ls -l ??
+   93  ls -l ??? 
+   94  ls -l ???? 
+   95  ls -ld ???? 
+   96  ls -l [a-d]* 
+   97  touch abcd 
+   98  ls -l [a-d]* 
+   99  ls -ltr 
+  100  history 
+
+  1  cat /etc/passwd
+    2  grep root /etc/passwd 
+    3  grep -n root /etc/passwd 
+    4  grep student /etc/passwd
+    5  grep -v root /etc/passwd 
+    6  cat > xyz 
+    7  grep hello xyz 
+    8  grep HELLO xyz 
+    9  grep -i hello xyz 
+   10  grep -nB4 wheel /etc/group 
+   11  grep -nA4 wheel /etc/group 
+   12  grep -A4 wheel /etc/group 
+   13  cd /dev/
+   14  ls -l 
+   15  ls -l | grep ^b 
+   16  ls -l | grep t$ 
+   17  ls -l | grep ^c 
+   18  ls -l | grep sda
+   19  cd
+   20  cat /etc/passwd
+   21  less /etc/passwd
+   22  more /etc/passwd
+   23  head /etc/passwd
+   24  head -n4 /etc/passwd
+   25  tail /etc/passwd
+   26  tail -n4 /etc/passwd
+   27  tail /etc/passwd
+   28  vim 
+   29  vim file1 
+   30  cat file1 
+   31  sort file1 
+   32  vim file1 
+   33  sort file1 
+   34  sort -r file1 
+   35  vim file1 
+   36  sort file1 
+   37  sort -u file1 
+   38  cat > file2 
+   39  man sed 
+   40  sed s/Linux/Windows/1 file2 
+   41  vim file2 
+   42  sed s/Linux/Windows/1 file2 
+   43  sed s/Linux/Windows/2 file2 
+   44  sed s/Linux/Windows/g file2 
+   45  sed s/Linux/Windows/* file2 
+   46  cat file2 
+   47  sed s/Linux/Windows/g file2 > file3 
+   48  ls -l 
+   49  cat file3 
+   50  find / -name file1 
+   51  ls -i 
+   52  find / -inum 53508915 
+   53  find / -type b 
+   54  find / -type c  
+   55  find / -type d 
+   56  find / -type f 
+   57  find / -size 10k 
+   58  find / -size +10k 
+   59  find / -size -10k 
+   60  find / -user student 
+   61  find / -group student 
+   62  history 
+
+
+  1  man man 
+    2  ls -l 
+    3  ls -l > /home/student/Desktop/file1 
+    4  ls -al 
+    5  ls -al >> /home/student/Desktop/file1 
+    6  ln -l 
+    7  ln -l 2> /home/student/Desktop/file2 
+    8  find / -name file1 
+    9  find / -name file1 2>> /home/student/Desktop/file2 
+   10  find / -type b 
+   11  find / -name file1 
+   12  find / -name file1 &> /home/student/Desktop/file3 
+   13  find / -type b &>> /home/student/Desktop/file3 
+   14  find / -name file1 
+   15  find / -name file1 2> /dev/null 
+   16  history 
+
+  1  useradd u1 
+    2  id u1 
+    3  id u2 
+    4  less /etc/passwd
+    5  tail /etc/passwd
+    6  useradd u2 -u 2002 -c Hr -d /home/demo -s /sbin/nologin 
+    7  tail /etc/passwd
+    8  su - u1 
+    9  su - u2 
+   10  usermod -s /bin/bash u2 
+   11  tail /etc/passwd
+   12  su - u2 
+   13  usermod -m -d /home/u2 u2 
+   14  tail /etc/passwd
+   15  su - u2 
+   16  usermod -l test-user u2 
+   17  tail /etc/passwd
+   18  su - u2 
+   19  su - test-user 
+   20  usermod -m -d /home/test-user test-user 
+   21  tail /etc/passwd
+   22  su - test-user 
+   23  passwd u1 
+   24  tail /etc/shadow
+   25  exit
+   26  su - u1 
+   27  exit
+   28  usermod -L u1 
+   29  exit
+   30  passwd -S u1 
+   31  su - u1 
+   32  usermod -U u1 
+   33  passwd -S u1 
+   34  exit
+   35  history 
+
+
+  1  useradd u1 
+    2  tail /etc/passwd
+    3  tail /etc/shadow
+    4  man 5 shadow 
+    5  passwd u1 
+    6  tail /etc/shadow
+    7  chage -l u1 
+    8  chage u1 
+    9  chage -l u1 
+   10  chage -E 2022-01-11 u1 
+   11  chage -l u1 
+   12  chage --help 
+   13  chage -W 4 u1 
+   14  chage -l u1 
+   15  groupadd redhat 
+   16  tail /etc/group
+   17  groupadd rhel -g 2004 
+   18  tail /etc/group
+   19  groupmod --help 
+   20  groupmod -g 4002 redhat 
+   21  tail /etc/group
+   22  groupmod -n linux rhel 
+   23  tail /etc/group
+   24  groupmod -og 2004 redhat 
+   25  tail /etc/group
+   26  groupdel redhat 
+   27  tail /etc/group
+   28  groupdel linux 
+   29  tail /etc/group
+   30  useradd u2 
+   31  useradd u3 
+   32  useradd u4 
+   33  tail /etc/passwd
+   34  groupadd redhat 
+   35  tail /etc/group
+   36  usermod -aG redhat u1 
+   37* id u1
+   38  usermod -aG redhat u2 
+   39  tail /etc/group
+   40  gpasswd -M u3,u4 redhat 
+   41  tail /etc/group
+   42  gpasswd --help 
+   43  tail /etc/gshadow
+   44  groupmod -p "1234" redhat 
+   45  tail /etc/gshadow
+   46  gpasswd redhat 
+   47  tail /etc/gshadow
+   48  gpasswd -r redhat 
+   49  tail /etc/gshadow
+   50  gpasswd -A u1 redhat 
+   51  tail /etc/gshadow
+   52  su - u1 
+   53  tail /etc/gshadow
+   54  su - u1 
+   55  su - 
+   56  su - u1 
+   57  su - 
+   58  su - u1 
+   59  tial /etc/gshadow
+   60  tail /etc/gshadow
+   61  gpasswd -d u2,u4 redhat 
+   62  tail /etc/group
+   63  vim /etc/login.defs 
+   64  useradd l1 
+   65  tail /etc/passwd
+   66  tail /etc/shadow
+   67  userdel u2 
+   68  tail /etc/passwd
+   69  cd /home/
+   70  ls -l 
+   71  userdel -r u3 
+   72  tail /etc/passwd
+   73  pwd
+   74  ls -l 
+   75  history 
+
+sudo 
+#visudo 
+student ALL=(ALL)       ALL 
+student ALL=(ALL)      /sbin/useradd, /sbin/usermod, /sbin/groupadd, /sbin/fdisk 
+student ALL=(ALL)       ALL, !/sbin/userdel, !/sbin/groupdel 
+
+Cmnd_Alias COMM = /sbin/fdisk, /sbin/userdel, /sbin/groupdel, /sbin/useradd, /sbin/groupadd
+ 
+student ALL=(ALL)       COMM 
+
+student ALL=(ALL)      NOPASSWD: ALL
+ 
+#usermod -aG wheel u1 -> full sudo for u1 user 
+#vim /etc/sudoers.d/i1 
+i1	ALL=(ALL) NOPASSWD: ALL 
+
+  1  mkdir pepsi 
+    2  ls -ld pepsi 
+    3  umask 
+    4  exit
+    5  umask 0020 
+    6  umask 
+    7  mkdir redbull 
+    8  ls -ld redbull 
+    9  umask 
+   10  touch file1 
+   11  ls -l file1 
+   12  ls -ld pepsi 
+   13  vim /etc/bashrc 
+   14  vim /etc/profile
+   15  source /etc/bashrc 
+   16  source /etc/profile
+   17  umask 
+   18  vim /etc/bashrc 
+   19  vim /etc/profile
+   20  source /etc/bashrc 
+   21  source /etc/profile
+   22  source /etc/profile 
+   23  umask 
+   24  ls -l 
+   25  chmod u-x,g+w,o=r pepsi 
+   26  ls -ld pepsi 
+   27  chmod a=rwx pepsi 
+   28  ls -ld pepsi 
+   29  ls -l 
+   30  chmod 755 pepsi 
+   31  ls -l 
+   32  chown student pepsi 
+   33  ls -l 
+   34  useradd u1 
+   35  useradd u2 
+   36  groupadd redhat
+   37  usermod -aG redhat u1 
+   38  usermod -aG redhat u2 
+   39  tail /etc/group 
+   40  chgrp redhat pepsi 
+   41  ls -ld pepsi 
+   42  cd pepsi 
+   43  su u1 
+   44  cd 
+   45  chmod g+w pepsi 
+   46  ls -l pepsi 
+   47  ls -ld pepsi 
+   48  cd pepsi 
+   49  su u1 
+   50  su u2 
+   51  cd 
+   52  ls -l 
+   53  chown student:redhat redbull 
+   54  ls -l 
+   55  fdisk -l 
+   56  exit
+   57  fdisk -l 
+   58  ls -l /sbin/fdisk 
+   59  chmod u+s /sbin/fdisk 
+   60  ls -l /sbin/fdisk 
+   61  exit
+   62  tail /etc/groupp 
+   63  tail /etc/group 
+   64  mkdir nokia 
+   65  ls -ld nokia 
+   66  chgrp redhat nokia 
+   67  ls -ld nokia 
+   68  chmod g+w nokia
+   69  ls -ld nokia 
+   70  cd nokia 
+   71  su u1 
+   72  cd
+   73  chmod g+s nokia 
+   74  ls -ld nokia 
+   75  cd nokia 
+   76  su u1 
+   77  cd
+   78  mkdir oppo 
+   79  ls -ld oppo 
+   80  chmod o+w oppo 
+   81  ls -ld oppo 
+   82  cd oppo 
+   83  su u1 
+   84  su u2 
+   85  cd
+   86  chmod o+t oppo 
+   87  ls -ld oppo 
+   88  cd oppo 
+   89  su u1 
+   90  cd
+   91  history 
+
+ACL 
+ 1  mkdir oppo 
+    2  ls -ld oppo 
+    3  getfacl oppo 
+    4  useradd Imtiyaz 
+    5  useradd Shyam  
+    6  useradd Kumar  
+    7  useradd Venkat  
+    8  useradd Rani  
+    9  groupadd RHEL 
+   10  usermod -aG RHEL Venkat 
+   11  usermod -aG RHEL Rani 
+   12  tail /etc/group
+   13  setfacl -m u:Imtiyaz:rwx,g:RHEL:rwx,o::r-- oppo 
+   14  ls -ld oppo 
+   15  getfacl oppo 
+   16  cd oppo 
+   17  su Imtiyaz 
+   18  su Venkat 
+   19  su Rani 
+   20  cd 
+   21  getfacl oppo 
+   22  tail /etc/group 
+   23  cd oppo 
+   24  su Rani 
+   25  cd
+   26  id Rani 
+   27  cd oppo 
+   28  su Venkat 
+   29  su Rani 
+   30  su Shyam 
+   31  cd
+   32  setfacl -R -m u:Imtiyaz:rwx,g:RHEL:rwx,o::r-- oppo 
+   33  cd oppo 
+   34  ls -l 
+   35  getfacl f1 
+   36  cd
+   37  getfacl oppo 
+   38  setfacl -m m::r-- oppo 
+   39  getfacl oppo 
+   40  cd oppo 
+   41  su Imtiyaz 
+   42  cd
+   43  setfacl -m m::rwx oppo 
+   44  getfacl oppo 
+   45  setfacl -m d:u:Shyam:rwx oppo 
+   46  getfacl oppo 
+   47  cd oppo 
+   48  su Imtiyaz 
+   49  cd dir1 
+   50  su Shyam 
+   51  cd .. 
+   52  su Shyam 
+   53  cd
+   54  getfacl oppo 
+   55  mkdir nokia
+   56  ls -ld nokia 
+   57  getfacl nokia 
+   58  getfacl oppo | setfacl --set-file=- nokia 
+   59  ls -ld nokia 
+   60  getfacl nokia 
+   61  getfacl oppo 
+   62  setfacl -x u:Imtiyaz oppo 
+   63  getfacl oppo 
+   64  setfacl -x g:RHEL oppo 
+   65  getfacl oppo 
+   66  setfacl -b oppo 
+   67  getfacl oppo 
+   68  getfacl nokia 
+   69  history 
+
+
+  1  ls -l 
+    2  tty
+    3  gedit file1 
+    4  ls -l 
+    5  gedit file1 
+    6  jobs 
+    7  ls -l 
+    8  fg %1
+    9  jobs 
+   10  sleep 10000 
+   11  jobs 
+   12  fg %1 
+   13  gedit file1 
+   14  jobs 
+   15  bg %1 
+   16  jobs 
+   17  ls -l 
+   18  ps aux 
+   19  ps aux | less 
+   20  jobs 
+   21  fg %1 
+   22  jobs 
+   23  ps aux 
+   24  sleep 20000 & 
+   25  jobs 
+   26  ps aux 
+   27  jobs 
+   28  fg %2 
+   29  jobs 
+   30  ps aux 
+   31  jobs 
+   32  kill -l 
+   33  jobs 
+   34  kill -18 %2 
+   35  jobs 
+   36  ps aux 
+   37  kill -19 4185 
+   38  jobs 
+   39  kill -15 %2 
+   40  jobs 
+   41  kill -9 %1 
+   42  jobs 
+   43  sleep 10000 & 
+   44  jobs 
+   45  killall -19 sleep 
+   46  jobs 
+   47  killall -18 sleep 
+   48  jo
+   49  jobs 
+   50  killall -15 sleep 
+   51  jobs 
+   52  sleep 10000 & 
+   53  sleep 20000 & 
+   54  jobs 
+   55  killall -15 sleep 
+   56  jobs 
+   57  tty 
+   58  pkill -t pts/1 -19 sleep 
+   59  pkill -t pts/1 -18 sleep 
+   60  pkill -t pts/1 -15 sleep 
+   61  pkill -t pts/1 -19 sleep 
+   62  history 
+
+
+
+ 1  ps aux 
+    2  top
+    3  ps aux 
+    4  ps axo pid,comm,nice --sort 
+    5  ps axo pid,comm,nice --sort=nice 
+    6  ps ao pid,comm,nice --sort=nice 
+    7  sleep 10000 & 
+    8  jobs 
+    9  ps ao pid,comm,nice --sort=nice 
+   10  nice -n 19 gedit file1 & 
+   11  jobs 
+   12  ps ao pid,comm,nice --sort=nice 
+   13  renice -n -20 4107 
+   14  ps ao pid,comm,nice --sort=nice 
+   15  renice -n 4097 
+   16  ps ao pid,comm,nice --sort=nice 
+   17  gnome-system-monitor 
+   18  systemctl 
+   19  systemctl --all 
+   20  systemctl list-unit-files 
+   21  systemctl -l 
+   22  systemctl --type=service 
+   23  systemctl --type=target 
+   24  systemctl --type=service --al 
+   25  systemctl --type=service --all 
+   26  service 
+   27  service --status-all 
+   28  systemctl status sshd.service 
+   29  systemctl stop sshd.service 
+   30  systemctl status sshd.service 
+   31  systemctl start sshd.service 
+   32  systemctl status sshd.service 
+   33  systemctl restart sshd.service 
+   34  systemctl status sshd.service 
+   35  systemctl relode sshd.service 
+   36  systemctl reload sshd.service 
+   37  systemctl status sshd.service 
+   38  systemctl is-active sshd.service 
+   39  systemctl is-enable sshd.service 
+   40  systemctl is-enabled sshd.service 
+   41  systemctl disable sshd.service 
+   42  systemctl status sshd.service 
+   43  reboot 
+   44  systemctl status sshd
+   45  systemctl enable sshd
+   46  systemctl status sshd
+   47  reboot 
+   48  systemctl status sshd.service 
+   49  systemctl status firewalld.service 
+   50  systemctl mask firewalld.service 
+   51  systemctl status firewalld.service 
+   52  systemctl stop firewalld.service 
+   53  systemctl start firewalld.service 
+   54  reboot 
+   55  systemctl status firewalld.service 
+   56  systemctl unmask firewalld.service 
+   57  systemctl status firewalld.service 
+   58  systemctl start firewalld.service 
+   59  systemctl status firewalld.service 
+   60  history 
+
+
+ 1  cd /run/media/student/RHEL-7.0\ Server.x86_64/
+    2  ls 
+    3  cd Packages 
+    4  ls -l 
+    5  tree
+    6  pwd
+    7  ls -l tree-1.6.0-10.el7.x86_64.rpm 
+    8  rpm -ivh tree-1.6.0-10.el7.x86_64.rpm 
+    9  tree
+   10  rpm -q tree 
+   11  rpm -q httpd
+   12  rpm -qa 
+   13  rpm -qa | grep tree 
+   14  rpm -qi tree 
+   15  rpm -qd tree 
+   16  rpm -ql tree 
+   17  rpm -qc tree
+   18  rpm -ivh vsftpd-3.0.2-9.el7.x86_64.rpm 
+   19  rpm -qc vsftpd 
+   20  rpm -Uvh vsftpd-3.0.2-9.el7.x86_64.rpm 
+   21  rpm -e tree 
+   22  rpm -q tree 
+   23  tree 
+   24  rpm -ivh httpd* 
+   25  yum install httpd* -y 
+   26  rpm -Va httpd* 
+   27  rpm -qi httpd
+   28  yum repolist all 
+   29  vim /etc/yum.repos.d/rhel.repo 
+   30  yum clean all 
+   31  yum repolist all 
+   32  cd
+   33  yum install httpd* 
+   34  yum install httpd* -y 
+   35  yum list httpd
+   36  yum list targetcli 
+   37  yum list all 
+   38  yum info httpd
+   39  yum search all "web server" 
+   40  yum search all "dhcp" 
+   41  yum provides /var/www/html 
+   42  yum update httpd* -y 
+   43  yum grouplist 
+   44  yum groupinstall "Development Tools" -y 
+   45  yum remove httpd* -y 
+   46  yum history 
+   47  yum history undo 4 
+   48  yum history 
+   49  history 
+
+
+   1  fdisk -l 
+    2  parted -l 
+    3  fdisk /dev/sda 
+    4  partprobe /dev/sda
+    5  kpartx /dev/sda
+    6  fdisk -l 
+    7  parted -l 
+    8  mkfs -t xfs /dev/sda3 
+    9  blkid /dev/sda1 
+   10  mount /dev/sda3 /mnt 
+   11  mount 
+   12  df -Th 
+   13  cd /mnt 
+   14  ls -l 
+   15  touch file{1..4} 
+   16  mkdir dir{1..4} 
+   17  ls -l 
+   18  reboot 
+   19  df -Th 
+   20  mkdir /home/student/Desktop/dir 
+   21  mount /dev/sda3 /home/student/Desktop/dir 
+   22  cd /home/student/Desktop/dir 
+   23  ls -l 
+   24  reboot 
+   25  vim /etc/fstab 
+   26  mount -a 
+   27  cd /home/student/Desktop/dir/
+   28  ls -l 
+   29  reboot 
+   30  cat /proc/meminfo 
+   31  free -m 
+   32  fdisk /dev/sda 
+   33  partprobe /dev/sda
+   34  mkswap /dev/sda7 
+   35  blkid /dev/sda7 
+   36  free -m 
+   37  swapon /dev/sda7  
+   38  free -m 
+   39  swapon -s 
+   40  reboot 
+   41  vim /etc/fstab 
+   42  free -m 
+   43  vim /etc/fstab 
+   44  mount -a 
+   45  swapon -a 
+   46  free -m 
+   47  reboot 
+   48  free -m 
+   49  swapoff /dev/sda7 
+   50  vim /etc/fstab 
+   51  umount /dev/sda3 
+   52  swapoff /dev/sda7 
+   53  fdisk /dev/sda 
+   54  partprobe /dev/sda
+   55  fdisk -l 
+   56  history 
+
+  1  lsblk 
+    2  fdisk /dev/sda 
+    3  partprobe /dev/sda
+    4  pvcreate /dev/sda3 
+    5  pvs
+    6  pvdisplay /dev/sda3 
+    7  vgcreate my_vg /dev/sda3 
+    8  vgs 
+    9  vgdisplay my_vg 
+   10  lvcreate -L 400M -n my_lv my_vg 
+   11  lvs 
+   12  vgdisplay 
+   13  lvdisplay 
+   14  mkfs -t ext4 /dev/my_vg/my_lv 
+   15  blkid /dev/my_vg/my_lv 
+   16  mkdir /home/student/Desktop/dir 
+   17  mount /dev/my_vg/my_lv /home/student/Desktop/dir 
+   18  cd /home/student/Desktop/dir/
+   19  touch abcd xyz file1 file2 
+   20  mkdir dir{1..4} 
+   21  ls -l 
+   22  cd
+   23  reboot 
+   24  vim /etc/fstab 
+   25  mount -a 
+   26  df -Th 
+   27  lvscan 
+   28  cd /home/student/Desktop/dir/
+   29  ls -l 
+   30  reboot 
+   31  lvextend -L +200M /dev/my_vg/my_lv 
+   32  df -Th 
+   33  resize2fs /dev/my_vg/my_lv 
+   34  df -Th 
+   35  cd /home/student/Desktop/dir/
+   36  ls -l 
+   37  cd
+   38  lvscan 
+   39  umount /dev/my_vg/my_lv 
+   40  e2fsck /dev/my_vg/my_lv 
+   41  e2fsck -f /dev/my_vg/my_lv 
+   42  resize2fs /dev/my_vg/my_lv 400M 
+   43  lvreduce -L -200M /dev/my_vg/my_lv 
+   44  mount -a 
+   45  cd /home/student/Desktop/dir/
+   46  ls -l 
+   47  cd
+   48  vgextend my_vg /dev/sda5 
+   49  vgs 
+   50  vgdisplay my_vg 
+   51  pvs
+   52  pvmove /dev/sda3 /dev/sda5 
+   53  pvs
+   54  vgreduce my_vg /dev/sda3 
+   55  pvs
+   56  vgdisplay my_vg 
+   57  cd /home/student/Desktop/dir/
+   58  ls -l 
+   59  cd
+   60  vim /etc/fstab 
+   61  umount /dev/my_vg/my_lv 
+   62  lvremove /dev/my_vg/my_lv 
+   63  vgremove /dev/my_vg 
+   64  pvremove /dev/sda3 /dev/sda5 
+   65  fdisk /dev/sda 
+   66  partprobe /dev/sda
+   67  history 
+
+  1  bc
+    2  fdisk /dev/sda 
+    3  partprobe /dev/sda
+    4  pvcreate /dev/sda3 
+    5  pvs
+    6  vgcreate -s 16 redhat /dev/sda3 
+    7  vgdisplay redhat 
+    8  lvcreate -l 15 -n fedora redhat 
+    9  lvdisplay 
+   10  lvscan 
+   11  mkfs -t /dev/redhat/fedora 
+   12  mkfs -t ext4 /dev/redhat/fedora 
+   13  blkid /dev/redhat/fedora 
+   14  mkdir /test 
+   15  vim /etc/fstab 
+   16  mount -a 
+   17  df -Th 
+   18  history 
+
+
+   1  nmcli connection show 
+    2  nmcli connection add con-name "default" type ethernet ifname eno16777736 
+    3  nmcli connection show 
+    4  nmcli connection up default 
+    5  nmcli connection show 
+    6  ip addr show eno16777736 
+    7  nmcli connection add con-name "static" type ethernet ifname eno16777736 ip4 172.16.0.11/16 gw4 172.16.0.1 
+    8  nmcli connection show 
+    9  nmcli connection up static 
+   10  nmcli connection show 
+   11  ip addr show eno16777736 
+   12  nmcli connection modify static ipv4.addresses '10.0.0.11/8 10.0.0.1' 
+   13  nmcli connection down static 
+   14  nmcli connection up static 
+   15  ip addr show eno16777736 
+   16  nmcli connection modify static connection.autoconnect no 
+   17  nmcli connection modify static ipv4.method manual 
+   18  nmcli device status 
+   19  nmcli device disconnect eno16777736 
+   20  nmcli device status 
+   21  nmcli device connect eno16777736 
+   22  nmcli device status 
+   23  nmcli device show 
+   24  nmcli connection show static 
+   25  cd /etc/sysconfig/network-scripts/
+   26  ls 
+   27  vim ifcfg-default 
+   28  cd /etc/sysconfig/network-scripts/
+   29  ls 
+   30  vim ifcfg-static 
+   31  systemctl restart network 
+   32  ip addr show eno16777736 
+   33  nmcli connection show 
+   34  nmcli device status 
+   35  nmcli device connect eno16777736 
+   36  nmcli connection up eno16777736 
+   37  reboot 
+   38  nmcli connection show 
+   39  nmcli connection delete default 
+   40  nmcli connection show 
+   41  nmtui
+   42  systemctl restart network 
+   43  ip addr show eno16777736 
+   44  hostname
+   45  hostnamectl set-hostname server.example.com 
+   46  hostname
+   47  ip addr show eno16777736 
+   48  ping 192.168.1.12 
+   49  ping client.example.com 
+   50  vim /etc/hosts
+   51  systemctl restart network 
+   52  ping client.example.com 
+   53  history 
+
+
+
+
+
+
+
+
+
+
+ 
+
+

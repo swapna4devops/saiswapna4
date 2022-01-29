@@ -1,0 +1,19 @@
+myansiblenode.yml
+---
+- hosts : localhost
+  become :  yes
+  tasks  :
+ - name : create ansible nodes
+   ec2 :
+  key_name : myansibleprobofflinekey
+  instance _type: t2.micro
+  image :  ami-06240b732b58ee6b4
+  group : mySGnew2022
+  count : 2
+  region: us-east-2
+  vpc_subnet_id:  subnet-0ee584f7f0f54974c
+  assign_public_ip: yes
+  nstance_tags:
+   Name: ansible 
+    
+ 

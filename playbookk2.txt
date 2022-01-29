@@ -1,0 +1,4 @@
+name : i want to install server
+apt  :
+name : apache
+state : present

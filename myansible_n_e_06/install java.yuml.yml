@@ -1,0 +1,10 @@
+---
+- hosts: myweserver
+  become : yes
+  tasks:
+  - name : i want to install git
+    apt: 
+      name: tree
+      state: present
+      
+  

@@ -1,0 +1,25 @@
+Red Hat Enterprise Linux 7 Server (RPMs)
+
+rhel-7-server-rpms
+
+x86_64 7Server or x86_64 7.9
+
+Red Hat Enterprise Linux 7 Server - Extras (RPMs)
+
+rhel-7-server-extras-rpms
+
+x86_64
+
+Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+
+rhel-8-for-x86_64-appstream-rpms
+
+x86_64 8.4
+
+Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)
+
+rhel-8-for-x86_64-baseos-rpms
+
+x86_64 8.4
+Login,First Name,Last Name,Email,Title/Position,Department,City,Country,Created,Updated,Active,Admin,Manage Support Case,Manage Subscription,Download Software and Updates,Portal Management,Portal Management Preference
+swapna.naidu201@gmail.com,swapna,naidu,swapna.naidu201@gmail.com,Developer,,bangalore,India,Thu Dec 02 16:38:15 EST 2021,Tue Dec 14 00:14:17 EST 2021,True,True,True,True,True,True,
